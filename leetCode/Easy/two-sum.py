@@ -7,10 +7,7 @@ Check if targetr - num has already been found
 Time -0(n)
 Space - 0(n) for the dictionary
 """
-
 from typing import List
-
-
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -21,4 +18,9 @@ class Solution(object):
         # key is number, value is index in nums
         
         num_to_index = {}
-        
+        for i, num in enumerate(nums):
+            if target - num in num_to_index:
+                return [num_to_index[target - num], i]
+
+            num_to_index[num] = i
+        return []
