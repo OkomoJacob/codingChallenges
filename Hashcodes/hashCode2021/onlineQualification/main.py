@@ -1,10 +1,10 @@
 """
-This is the raw praactice file for the pizza practice problem, shared by b1ack0t
+Edited by commenting out class pizza and def init shared by b1ack0t
 """
-class Pizza():
+# class Pizza():
 class Operation():
 
-    def __init__(self):
+    # def __init__(self):
 
     def readData(self, filename):
         """
@@ -41,7 +41,7 @@ class Operation():
                 f.write(string)
             f.write('\n')
 
-    def algorithm(self):
+    # def algorithm(self):
 
 
 operation_a = Operation()
