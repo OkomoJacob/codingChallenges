@@ -24,3 +24,5 @@ class Solution(object):
 
             num_to_index[num] = i
         return [] #no sum
+
+nums = input("Enter nums :")
