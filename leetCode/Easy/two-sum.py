@@ -23,4 +23,4 @@ class Solution(object):
                 return [num_to_index[target - num], i]
 
             num_to_index[num] = i
-        return [] 
+        return [] #no sum
