@@ -7,3 +7,18 @@ Check if targetr - num has already been found
 Time -0(n)
 Space - 0(n) for the dictionary
 """
+
+from typing import List
+
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target : int
+        :rtype : List[int]
+        """
+        # key is number, value is index in nums
+        
+        num_to_index = {}
+        
