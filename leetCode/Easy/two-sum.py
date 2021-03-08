@@ -9,14 +9,11 @@ Space - 0(n) for the dictionary
 """
 from typing import List
 class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target : int
-        :rtype : List[int]
-        """
+    def twoSum(self, nums : List[int], target : int) -> List[int]:
         # key is number, value is index in nums
         
+        nums = input("Enter nums :") 
+
         num_to_index = {}
         for i, num in enumerate(nums):
             if target - num in num_to_index:
@@ -24,5 +21,3 @@ class Solution(object):
 
             num_to_index[num] = i
         return [] #no sum
-
-    nums = input("Enter nums :")
