@@ -1,4 +1,4 @@
 # Hashcode 2020
 Google hashcode problem statements
 
-Book scanning
+Book scanning statement by google
