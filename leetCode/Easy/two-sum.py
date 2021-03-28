@@ -15,9 +15,9 @@ class Solution(object):
         nums = input("Enter nums :") 
 
         num_to_index = {}
-        for i, num in enumerate(nums):
+        for x, num in enumerate(nums):
             if target - num in num_to_index:
-                return [num_to_index[target - num], i]
+                return [num_to_index[target - num], x]
 
-            num_to_index[num] = i
+            num_to_index[num] = x
         return [] #no sum
