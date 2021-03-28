@@ -12,8 +12,6 @@ class Solution(object):
     def twoSum(self, nums : List[int], target : int) -> List[int]:
         # key is number, value is index in nums
         
-        nums = input("Enter nums :") 
-
         num_to_index = {}
         for x, num in enumerate(nums):
             if target - num in num_to_index:
