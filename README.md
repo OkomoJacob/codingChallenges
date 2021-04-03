@@ -10,3 +10,6 @@ A website where developers, mostly software engineers practice their coding skil
 
 ##### 3. [Kaggle](https://www.kaggle.com/)
 A global site for coding competition and alsop hosts and freely provides data for Machine Learning and Deep Learning
+
+##### 3. [Zindi](https://zindi.africa/)
+Zindi connnects organisations with thriving African data science community to solve the world’s most pressing challenges using machine learning and AI.
