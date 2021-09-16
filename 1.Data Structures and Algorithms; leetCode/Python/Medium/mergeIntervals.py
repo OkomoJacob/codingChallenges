@@ -9,3 +9,10 @@ Exampl 2:
     Output: [1,5]
     Explanation: Since intervals [1,4] and [4,5] overlaps, merge them into [1,5]
 '''
+class Solution:
+    #0(1) space | time - not sure; concidr .sort()
+    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        #sort
+        intervals.sort(key=lambda item: item[0])
+        i = 0
+        
