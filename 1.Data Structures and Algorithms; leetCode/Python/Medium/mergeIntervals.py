@@ -1,4 +1,4 @@
-'''Given a collection of intervals, merge all overlapping intervals
+'''56. Given a collection of intervals, merge all overlapping intervals
 Example 1: 
     Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
     Output: [[1,6],[8,10],[15,18]]
@@ -22,6 +22,7 @@ class Solution:
 
             #check overlap
             if curr_a[1] >= next_a[0]:
+
                 # merge, we use next due do cases like [[1,4],[2,3]]
                 # sort the array in ascending order
                 intervals[i][1] = max(curr_a[1],next_a[1])
