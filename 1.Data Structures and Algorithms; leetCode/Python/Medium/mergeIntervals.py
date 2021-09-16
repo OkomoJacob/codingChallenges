@@ -15,4 +15,11 @@ class Solution:
         #sort
         intervals.sort(key=lambda item: item[0])
         i = 0
-        
+        # needless to check the last array
+        while (i + 1) < len(intervals):
+            curr_a = intervals[i]
+            next_a = intervals[i+1]
+
+            #check overlap
+            if curr_a[1] >= next_a[0]:
+                
