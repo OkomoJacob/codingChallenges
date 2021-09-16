@@ -22,4 +22,15 @@ class Solution:
 
             #check overlap
             if curr_a[1] >= next_a[0]:
-                
+                # merge, we use next due do cases like [[1,4],[2,3]]
+                # sort the array in ascending order
+                intervals[i][1] = max(curr_a[1],next_a[1])
+
+                # delete the second array
+                intervals.pop(i+1)
+
+            else:
+                i += 1
+        return intervals
+
+
