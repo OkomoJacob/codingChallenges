@@ -16,13 +16,31 @@ true
 */
 
 /*Solution
-1. Keep track of two pointers 
+1. Keep track of one pointer in the sequence array
 2. Iterate through the main array
 3. Check if the index in the sequence is matching
 4. If false then move the pointer in the sequence to the right untill we reach the end of the sequence
 5. If we reach the end of the array without reaching the end of the sequnce, then return false.
 */
 
-function isValidSubsequeence(array, sequence){
+array = [5, 1, 22, 25, 6, -1, 8, 10]
+sequence = [1, 6, -1, 10]
 
+function isValidSubsequence(array, sequence){
+    let sequenceIdx = 0;
+    // Iterate through all numbers in the main array
+    for (const number of array){
+        if (number == sequence[sequenceIdx]){
+            sequenceIdx++;
+        }
+        // If end of sequence return true 
+        if (sequenceIdx === sequence.length) return true;
+    }
+    return false;
 }
+console.log(isValidSubsequence(array, sequence));
+
+/*
+    Optimal Space & Time complexity
+    O(n) Time | 0(1) Space- Where n is the length of the array
+*/
