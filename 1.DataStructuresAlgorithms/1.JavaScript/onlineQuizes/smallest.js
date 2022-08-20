@@ -11,7 +11,7 @@ N is an integer within the range [1..100,000];
 each element of array A is an integer within the range [−1,000,000..1,000,000].
 */
 let testArr = [1, 3, 6, 4, 1, 2];
-findSmallestMissing(testArr){
+function findSmallestMissing(testArr){
    let start = 1;
    if(!testArr?.length){
       return start;
